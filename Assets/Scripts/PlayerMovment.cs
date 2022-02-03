@@ -6,33 +6,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovment : MonoBehaviour
 {
-    public float moveSpeed;
+    private Vector2 moveInput;
 
-    public Rigidbody2D rb;
-
-    private Vector2 moveDierction;
-
-    void FixedUpdate()
+    void PhysicsUpdate()
     {
-        Move();
-    }
 
-    void Update()
+    }
+    void OnMove(InputValue value)
     {
-       
+        moveInput = value.Get<Vector2>();
     }
-
-    void ProcessInputs()
-    {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-
-        moveDierction = new Vector2(moveX, moveY);
-    }
-
-    void Move()
-    {
-        rb.velocity = new Vector2(moveDierction.x * moveSpeed, moveDierction.y * moveSpeed);
-    }
-
 }

@@ -11,8 +11,7 @@ public class EscMenu : MonoBehaviour
    public GameObject consol;
    void Start()
    {
-        kb = Keyboard.current;
-        
+        kb = Keyboard.current;   
    }
    
       
