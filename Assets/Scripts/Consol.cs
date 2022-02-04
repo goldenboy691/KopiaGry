@@ -10,7 +10,7 @@ public class Consol : MonoBehaviour
 
     //Comandy
     string comand1 = "1-Help 2-Robi coś 3-Robi coś 4 -Robi coś 5 -Robi coś";
-    string comand2 = "Unity-2020.3.25f1 , version-alfa.04";
+    string comand2 = "Unity-2020.3.25f1 , version-alfa.05";
     string comand3 = "Comand1 -dsds Comand2 - Ssds";
     string comand4 = "Comand1 -dsds Comand2 - Ssds";
     string comand5 = "Comand1 -dsds Comand2 - Ssds";

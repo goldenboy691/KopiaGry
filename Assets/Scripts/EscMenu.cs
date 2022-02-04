@@ -31,10 +31,7 @@ public class EscMenu : MonoBehaviour
        {
            consol.SetActive(true);
        }
-       if(kb.mKey.isPressed)
-       {
-           consol.SetActive(false);
-       }
+       
    }
    public void Tak()
    {
@@ -44,7 +41,6 @@ public class EscMenu : MonoBehaviour
 
    public void ZamknijKonsole()
    {  
-           escPanel.SetActive(false);
+           consol.SetActive(false);
    }
-   
 }
